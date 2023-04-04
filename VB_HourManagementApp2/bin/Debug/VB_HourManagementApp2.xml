@@ -1,0 +1,693 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+VB_HourManagementApp2
+</name>
+</assembly>
+<members>
+<member name="T:VB_HourManagementApp2.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:VB_HourManagementApp2.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:VB_HourManagementApp2.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:VB_HourManagementApp2.CommonProc.IsFitInText(System.String,System.Int64)">
+ <summary>
+ 文字列がおさまっているかどうか
+ </summary>
+ 2023/03/28
+</member>
+<member name="M:VB_HourManagementApp2.CommonProc.HideAndOpen(System.Windows.Forms.Form,System.Windows.Forms.Form)">
+ <summary>
+ 画面遷移
+ </summary>
+ 2023/03/28
+</member>
+<member name="M:VB_HourManagementApp2.CommonProc.SetCmb(System.Windows.Forms.ComboBox,System.Collections.Generic.List{System.String})">
+ <summary>
+ コンボボックス設定
+ </summary>
+ 2023/03/29
+</member>
+<member name="M:VB_HourManagementApp2.CommonProc.SafeCastInt(System.String)">
+ <summary>
+ 安全にInt型に変換する
+ </summary>
+ 2023/03/29
+</member>
+<member name="M:VB_HourManagementApp2.CommonProc.IsInputed(System.String)">
+ <summary>
+ 入力されているかどうか?
+ </summary>
+ 2023/03/29
+</member>
+<member name="M:VB_HourManagementApp2.CommonProc.IsTextInCmb(System.Windows.Forms.ComboBox,System.String)">
+ <summary>
+ コンボボックスの選択肢内かどうか?
+ </summary>
+ 2023/03/29
+</member>
+<member name="P:VB_HourManagementApp2.DB.Con">
+ <summary>
+ コネクション
+ </summary>
+</member>
+<member name="P:VB_HourManagementApp2.DB.Tran">
+ <summary>
+ トランザクション
+ </summary>
+</member>
+<member name="M:VB_HourManagementApp2.DB.#ctor">
+ <summary>
+ コンストラクタ
+ </summary>
+ 2023/03/28
+</member>
+<member name="M:VB_HourManagementApp2.DB.ConOpen(System.String)">
+ <summary>
+ コネクションを開く
+ </summary>
+ 2023/03/28
+</member>
+<member name="M:VB_HourManagementApp2.DB.BeginTran">
+ <summary>
+ トランザクション開始
+ </summary>
+ 2023/03/28
+</member>
+<member name="M:VB_HourManagementApp2.DB.RollBack">
+ <summary>
+ ロールバック
+ </summary>
+ 2023/03/28
+</member>
+<member name="M:VB_HourManagementApp2.DB.Commit">
+ <summary>
+ コミット
+ </summary>
+ 2023/03/28
+</member>
+<member name="M:VB_HourManagementApp2.DB.GetCmd(System.String)">
+ <summary>
+ コマンドを取得
+ </summary>
+ 2023/03/28
+</member>
+<member name="M:VB_HourManagementApp2.DB.ExecuteNonQuery(System.String,System.Collections.Generic.List{System.Data.SqlClient.SqlParameter})">
+ <summary>
+ INSERT, UPDATE, DELETE用
+ </summary>
+ 2023/03/28
+</member>
+<member name="M:VB_HourManagementApp2.DB.ExecuteScalar(System.String,System.Collections.Generic.List{System.Data.SqlClient.SqlParameter})">
+ <summary>
+ SELECT COUNT用
+ </summary>
+ 2023/03/28
+</member>
+<member name="M:VB_HourManagementApp2.DB.ExecuteReader(System.String,System.Collections.Generic.List{System.Data.SqlClient.SqlParameter})">
+ <summary>
+ SELECT用
+ </summary>
+ 2023/03/28
+</member>
+<member name="M:VB_HourManagementApp2.DB.GetDt(System.String,System.Collections.Generic.List{System.Data.SqlClient.SqlParameter})">
+ <summary>
+ SELECT用
+ </summary>
+ 2023/03/28
+</member>
+<member name="T:VB_HourManagementApp2.EnumValue.UserType">
+ <summary>
+ ユーザ種類
+ </summary>
+</member>
+<member name="T:VB_HourManagementApp2.EnumValue.IsLock">
+ <summary>
+ ロックタイプ
+ </summary>
+</member>
+<member name="T:VB_HourManagementApp2.EnumValue.IsVisible">
+ <summary>
+ 表示非表示
+ </summary>
+</member>
+<member name="T:VB_HourManagementApp2.EnumValue.Status">
+ <summary>
+ 状態
+ </summary>
+</member>
+<member name="T:VB_HourManagementApp2.EnumValue.IsNotification">
+ <summary>
+ 通知したかどうか
+ </summary>
+</member>
+<member name="M:VB_HourManagementApp2.FrmArchiveTasks.InitForm">
+ <summary>
+ フォーム初期化
+ </summary>
+ 2023/04/03
+</member>
+<member name="M:VB_HourManagementApp2.FrmArchiveTasks.SetDataSource">
+ <summary>
+ データソースの設定
+ </summary>
+ 2023/04/03
+</member>
+<member name="M:VB_HourManagementApp2.FrmCalcHour.InitForm">
+ <summary>
+ フォーム初期化
+ </summary>
+ 2023/04/04
+</member>
+<member name="M:VB_HourManagementApp2.FrmCalcHour.SetCmb">
+ <summary>
+ コンボボックスの設定
+ </summary>
+ 2023/04/04
+</member>
+<member name="M:VB_HourManagementApp2.FrmInsertProject.InitForm">
+ <summary>
+ フォーム初期化
+ </summary>
+ 2023/03/29
+</member>
+<member name="M:VB_HourManagementApp2.FrmInsertProject.SetCmb">
+ <summary>
+ コンボボックスの設定
+ </summary>
+ 2023/03/29
+</member>
+<member name="M:VB_HourManagementApp2.FrmInsertTask.InitForm">
+ <summary>
+ フォーム初期化
+ </summary>
+ 2023/03/30
+</member>
+<member name="M:VB_HourManagementApp2.FrmInsertTask.SetCmb">
+ <summary>
+ コンボボックスの設定
+ </summary>
+ 2023/03/30
+</member>
+<member name="M:VB_HourManagementApp2.FrmMain.InitForm">
+ <summary>
+ フォーム初期化
+ </summary>
+ 2023/03/28
+</member>
+<member name="M:VB_HourManagementApp2.FrmMain.SetBtnVisible">
+ <summary>
+ ボタンの表示非表示を設定
+ </summary>
+ 2023/03/28
+</member>
+<member name="M:VB_HourManagementApp2.FrmProjects.InitForm">
+ <summary>
+ フォーム初期化
+ </summary>
+ 2023/03/29
+</member>
+<member name="M:VB_HourManagementApp2.FrmProjects.SetDataSource">
+ <summary>
+ データソースの設定
+ </summary>
+ 2023/03/29
+</member>
+<member name="M:VB_HourManagementApp2.FrmProjectWikis.InitForm">
+ <summary>
+ フォーム初期化
+ </summary>
+ 2023/04/03
+</member>
+<member name="M:VB_HourManagementApp2.FrmProjectWikis.SetCmb">
+ <summary>
+ コンボボックスの設定
+ </summary>
+ 2023/04/03
+</member>
+<member name="M:VB_HourManagementApp2.FrmProjectWikis.SetWiki(System.String)">
+ <summary>
+ Wikiを設定
+ </summary>
+ 2023/04/03
+</member>
+<member name="M:VB_HourManagementApp2.FrmReleaseLock.InitForm">
+ <summary>
+ フォーム初期化
+ </summary>
+ 2023/03/29
+</member>
+<member name="M:VB_HourManagementApp2.FrmReleaseLock.SetDataSource">
+ <summary>
+ データソースの設定
+ </summary>
+ 2023/03/29
+</member>
+<member name="M:VB_HourManagementApp2.FrmRequestProject.InitForm">
+ <summary>
+ フォーム初期化
+ </summary>
+ 2023/04/03
+</member>
+<member name="M:VB_HourManagementApp2.FrmRequestProject.SetCmb">
+ <summary>
+ コンボボックスの設定
+ </summary>
+ 2023/04/03
+</member>
+<member name="M:VB_HourManagementApp2.FrmTasks.InitForm">
+ <summary>
+ フォーム初期化
+ </summary>
+ 2023/03/30
+</member>
+<member name="M:VB_HourManagementApp2.FrmTasks.SetDataSource">
+ <summary>
+ データソースの設定
+ </summary>
+ 2023/03/30
+</member>
+<member name="M:VB_HourManagementApp2.FrmTasks.SetSearchDataSource(System.String)">
+ <summary>
+ 検索用データソースの設定
+ </summary>
+ 2023/03/31
+</member>
+<member name="M:VB_HourManagementApp2.FrmTasks.SetSortedDataSource">
+ <summary>
+ ソート済みデータソースを取得
+ </summary>
+ 2023/03/31
+</member>
+<member name="M:VB_HourManagementApp2.FrmUpdateProject.InitForm">
+ <summary>
+ フォーム初期化
+ </summary>
+ 2023/03/29
+</member>
+<member name="M:VB_HourManagementApp2.FrmUpdateProject.SetCmb">
+ <summary>
+ コンボボックスの設定
+ </summary>
+ 2023/03/29
+</member>
+<member name="M:VB_HourManagementApp2.FrmUpdateProject.SetProject">
+ <summary>
+ プロジェクト情報を設定
+ </summary>
+ 2023/03/29
+</member>
+<member name="M:VB_HourManagementApp2.FrmUpdateTask.InitForm">
+ <summary>
+ フォーム初期化
+ </summary>
+ 2023/03/30
+</member>
+<member name="M:VB_HourManagementApp2.FrmUpdateTask.SetCmb">
+ <summary>
+ コンボボックスの設定
+ </summary>
+ 2023/03/30
+</member>
+<member name="M:VB_HourManagementApp2.FrmUpdateTask.SetTask">
+ <summary>
+ タスク情報を画面に設定する
+ </summary>
+ 2023/03/31
+</member>
+<member name="M:VB_HourManagementApp2.OtherProc.GetStatusList">
+ <summary>
+ 状態のリストを取得
+ </summary>
+ 2023/03/29
+</member>
+<member name="M:VB_HourManagementApp2.OtherProc.StatusToInt(System.String)">
+ <summary>
+ 状態をInt型に変換する
+ </summary>
+ 2023/03/21
+</member>
+<member name="M:VB_HourManagementApp2.OtherProc.StatusToString(System.String)">
+ <summary>
+ 状態をString型に変換する
+ </summary>
+ 2023/03/29
+</member>
+<member name="M:VB_HourManagementApp2.Project.InsertProject(System.String,System.Int32,System.String,System.DateTime,System.DateTime,System.String)">
+ <summary>
+ プロジェクト登録
+ </summary>
+ 2023/03/29
+</member>
+<member name="M:VB_HourManagementApp2.Project.GetProjectsList">
+ <summary>
+ プロジェクトリストを取得する
+ </summary>
+ 2023/03/29
+</member>
+<member name="M:VB_HourManagementApp2.Project.DtToProjectList(System.Data.DataTable)">
+ <summary>
+ データテーブルをプロジェクトリストに変換する
+ </summary>
+ 2023/03/29
+</member>
+<member name="M:VB_HourManagementApp2.Project.DeleteProject(System.Int64)">
+ <summary>
+ プロジェクト削除
+ </summary>
+ 2023/03/29
+</member>
+<member name="M:VB_HourManagementApp2.Project.GetProject(System.Int64)">
+ <summary>
+ プロジェクト情報を取得
+ </summary>
+ 2023/03/29
+</member>
+<member name="M:VB_HourManagementApp2.Project.UpdateProject(System.String,System.Int32,System.String,System.DateTime,System.DateTime,System.String,System.Int64)">
+ <summary>
+ プロジェクト更新
+ </summary>
+ 2023/03/30
+</member>
+<member name="M:VB_HourManagementApp2.Project.ProjectListToStringList(System.Collections.Generic.List{VB_HourManagementApp2.ProjectData})">
+ <summary>
+ プロジェクトリストを文字列のリストに変換する
+ </summary>
+ 2023/04/03
+</member>
+<member name="M:VB_HourManagementApp2.Project.ProjectNameToID(System.String)">
+ <summary>
+ プロジェクト名をプロジェクトIDに変換する
+ </summary>
+ 2023/04/03
+</member>
+<member name="M:VB_HourManagementApp2.Project.GetWiki(System.Int64)">
+ <summary>
+ Wiki情報を取得
+ </summary>
+ 2023/04/03
+</member>
+<member name="M:VB_HourManagementApp2.Project.UpdateWiki(System.String,System.Int64)">
+ <summary>
+ Wiki情報を更新
+ </summary>
+ 2023/04/03
+</member>
+<member name="M:VB_HourManagementApp2.Project.IsExistsTodayProject">
+ <summary>
+ 通知していない、本日のプロジェクトが存在するかどうか?
+ </summary>
+ 2023/04/03
+</member>
+<member name="M:VB_HourManagementApp2.Project.Notification">
+ <summary>
+ 通知
+ </summary>
+ 2023/04/03
+</member>
+<member name="M:VB_HourManagementApp2.Project.GetTodayProjectList">
+ <summary>
+ 通知していない、本日のプロジェクトを取得
+ </summary>
+ 2023/04/03
+</member>
+<member name="M:VB_HourManagementApp2.Project.GetNotificationStr(System.Collections.Generic.List{VB_HourManagementApp2.ProjectData})">
+ <summary>
+ 通知文言を作成
+ </summary>
+ 2023/04/03
+</member>
+<member name="M:VB_HourManagementApp2.Project.UpdateNotification">
+ <summary>
+ 通知状態を更新
+ </summary>
+ 2023/04/04
+</member>
+<member name="M:VB_HourManagementApp2.Project.GetSumProjectHours(System.Int64)">
+ <summary>
+ 合計工数を取得
+ </summary>
+ 2023/04/04
+</member>
+<member name="P:VB_HourManagementApp2.ProjectData.Id">
+ <summary>
+ ID
+ </summary>
+</member>
+<member name="P:VB_HourManagementApp2.ProjectData.ProjectName">
+ <summary>
+ プロジェクト名
+ </summary>
+</member>
+<member name="P:VB_HourManagementApp2.ProjectData.Hour">
+ <summary>
+ 工数
+ </summary>
+</member>
+<member name="P:VB_HourManagementApp2.ProjectData.Summary">
+ <summary>
+ 概要
+ </summary>
+</member>
+<member name="P:VB_HourManagementApp2.ProjectData.StartDate">
+ <summary>
+ 開始日時
+ </summary>
+</member>
+<member name="P:VB_HourManagementApp2.ProjectData.EndDate">
+ <summary>
+ 終了日時
+ </summary>
+</member>
+<member name="P:VB_HourManagementApp2.ProjectData.Status">
+ <summary>
+ 状態
+ </summary>
+</member>
+<member name="M:VB_HourManagementApp2.Request.InsertRequest(System.String,System.Int64)">
+ <summary>
+ リクエスト登録
+ </summary>
+ 2023/04/03
+</member>
+<member name="M:VB_HourManagementApp2.Request.IsExistsRequest">
+ <summary>
+ リクエストが存在するかどうか?
+ </summary>
+ 2023/04/03
+</member>
+<member name="M:VB_HourManagementApp2.Request.Notification">
+ <summary>
+ 通知
+ </summary>
+ 2023/04/03
+</member>
+<member name="M:VB_HourManagementApp2.Request.GetRequestList">
+ <summary>
+ リクエストリスト取得
+ </summary>
+ 2023/04/03
+</member>
+<member name="M:VB_HourManagementApp2.Request.DtToRequestList(System.Data.DataTable)">
+ <summary>
+ データテーブルをリクエストリストに変換する
+ </summary>
+ 2023/04/03
+</member>
+<member name="M:VB_HourManagementApp2.Request.GetNotificationStr(System.Object)">
+ <summary>
+ 通知文言を作成
+ </summary>
+ 2023/04/03
+</member>
+<member name="M:VB_HourManagementApp2.Request.UpdateNotification">
+ <summary>
+ 通知状態を更新
+ </summary>
+ 2023/04/03
+</member>
+<member name="P:VB_HourManagementApp2.RequestData.UserName">
+ <summary>
+ ユーザ名
+ </summary>
+</member>
+<member name="P:VB_HourManagementApp2.RequestData.ProjectName">
+ <summary>
+ プロジェクト名
+ </summary>
+</member>
+<member name="M:VB_HourManagementApp2.Task.InsertTask(System.String,System.Int32,System.String,System.String,System.Int64)">
+ <summary>
+ タスク登録
+ </summary>
+ 2023/03/30
+</member>
+<member name="M:VB_HourManagementApp2.Task.GetProjectTaskList(System.Int64)">
+ <summary>
+ タスク一覧取得
+ </summary>
+ 2023/03/30
+</member>
+<member name="M:VB_HourManagementApp2.Task.DtToTaskList(System.Data.DataTable)">
+ <summary>
+ データテーブルをタスクリストに変換する
+ </summary>
+ 2023/03/30
+</member>
+<member name="M:VB_HourManagementApp2.Task.DeleteTask(System.Int64)">
+ <summary>
+ タスク削除
+ </summary>
+ 2023/03/30
+</member>
+<member name="M:VB_HourManagementApp2.Task.GetTask(System.Int64)">
+ <summary>
+ タスク取得
+ </summary>
+ 2023/03/30
+</member>
+<member name="M:VB_HourManagementApp2.Task.UpdateTask(System.String,System.Int32,System.String,System.String,System.Int64,System.Int64)">
+ <summary>
+ タスク更新
+ </summary>
+ 2023/03/31
+</member>
+<member name="M:VB_HourManagementApp2.Task.GetSearchCount(System.Int64,System.String)">
+ <summary>
+ 検索件数を取得
+ </summary>
+ 2023/03/31
+</member>
+<member name="M:VB_HourManagementApp2.Task.FilterTaskList(System.Int64,System.String)">
+ <summary>
+ タスク検索
+ </summary>
+ 2023/03/31
+</member>
+<member name="M:VB_HourManagementApp2.Task.OutputCSV(System.Collections.Generic.List{VB_HourManagementApp2.TaskData},System.String)">
+ <summary>
+ CSV出力
+ </summary>
+ 2023/03/31
+</member>
+<member name="M:VB_HourManagementApp2.Task.TaskListToStringList(System.Collections.Generic.List{VB_HourManagementApp2.TaskData})">
+ <summary>
+ CSV出力
+ </summary>
+ 2023/03/31
+</member>
+<member name="M:VB_HourManagementApp2.Task.GetSortedProjectTaskList(System.Object)">
+ <summary>
+ ソート済みタスクリストを取得
+ </summary>
+ 2023/03/31
+</member>
+<member name="M:VB_HourManagementApp2.Task.Archive(System.Object)">
+ <summary>
+ アーカイブ
+ </summary>
+ 2023/04/03
+</member>
+<member name="M:VB_HourManagementApp2.Task.GetAllArchivedTaskList">
+ <summary>
+ アーカイブ一覧取得
+ </summary>
+ 2023/04/03
+</member>
+<member name="P:VB_HourManagementApp2.TaskData.Id">
+ <summary>
+ ID
+ </summary>
+</member>
+<member name="P:VB_HourManagementApp2.TaskData.TaskName">
+ <summary>
+ タスク名
+ </summary>
+</member>
+<member name="P:VB_HourManagementApp2.TaskData.Hour">
+ <summary>
+ 工数
+ </summary>
+</member>
+<member name="P:VB_HourManagementApp2.TaskData.Summary">
+ <summary>
+ 概要
+ </summary>
+</member>
+<member name="P:VB_HourManagementApp2.TaskData.InsertDate">
+ <summary>
+ 投稿日時
+ </summary>
+</member>
+<member name="P:VB_HourManagementApp2.TaskData.UpdateDate">
+ <summary>
+ 更新日時
+ </summary>
+</member>
+<member name="P:VB_HourManagementApp2.TaskData.Status">
+ <summary>
+ 状態
+ </summary>
+</member>
+<member name="M:VB_HourManagementApp2.User.IsExistsUser(System.String,System.String)">
+ <summary>
+ ユーザが存在するどうか?
+ </summary>
+ 2023/03/28
+</member>
+<member name="M:VB_HourManagementApp2.User.IsExistsUserName(System.String)">
+ <summary>
+ ユーザ名が存在するどうか?
+ </summary>
+ 2023/03/28
+</member>
+<member name="M:VB_HourManagementApp2.User.GetUserID(System.String,System.String)">
+ <summary>
+ ユーザID取得
+ </summary>
+ 2023/03/28
+</member>
+<member name="M:VB_HourManagementApp2.User.UpdateLock(System.String,System.Int32)">
+ <summary>
+ ロック状態を更新
+ </summary>
+ 2023/03/28
+</member>
+<member name="M:VB_HourManagementApp2.User.IsLockedUserName(System.String)">
+ <summary>
+ ロックされているかどうか?
+ </summary>
+ 2023/03/28
+</member>
+<member name="M:VB_HourManagementApp2.User.IsAdmin(System.Int64)">
+ <summary>
+ 管理者かどうか?
+ </summary>
+ 2023/03/28
+</member>
+<member name="M:VB_HourManagementApp2.User.GetLockedUsers">
+ <summary>
+ ロックされているユーザ一覧を取得
+ </summary>
+ 2023/03/29
+</member>
+<member name="M:VB_HourManagementApp2.User.IDToUserName(System.Int64)">
+ <summary>
+ IDをユーザ名に変換する
+ </summary>
+ 2023/04/03
+</member>
+</members>
+</doc>
